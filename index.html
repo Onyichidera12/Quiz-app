@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nova+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>QUESTIONS ON JAVASCRIPT</h1>
+
+      <div class="feedback-modal">
+        <div class="modal-content">Feedback</div>
+      </div>
+      <section class="info">
+        <div>
+          <button>Score: <span class="score">0</span>/15</button>
+        </div>
+        <div>
+          <button>Timer: <span class="timer"></span></button>
+        </div>
+      </section>
+
+      <button id="start-button">Start Quiz?</button>
+
+      <section id="rules">
+        <div class="rules-modal">
+          <h1>Before you begin...</h1>
+
+          <ul class="rule-list">
+            <li>This quiz will test your basic knowledge of javascript.</li>
+            <li>Once time limit has elapsed, the quiz will end.</li>
+            <li>Your total score would be provided at the end of the quiz.</li>
+            <li>This quiz requires an internet connection.</li>
+          </ul>
+
+          <div class="quiz-buttons">
+            <button class="cancel-quiz">Cancel</button>
+            <button class="start-quiz">Start Quiz</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
